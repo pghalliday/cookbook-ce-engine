@@ -1,5 +1,5 @@
-cookbook-zeromq
-===============
+cookbook-ce-engine
+==================
 
 Chef cookbook to install ce-engine
 
