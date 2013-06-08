@@ -1,7 +1,7 @@
 cookbook-ce-engine
 ==================
 
-Chef cookbook to install ce-engine
+Chef cookbook to install and start a ce-engine instance
 
 ## Depends
 
@@ -19,7 +19,9 @@ Attributes are specified under the `ce_engine` keyspace.
 
 ### default
 
-Installs ce-engine
+- Installs ce-engine
+- Runs npm install to get dependencies
+- Runs npm start to start the ce-front-end
 
 ## License
 Copyright (c) 2013 Peter Halliday  
