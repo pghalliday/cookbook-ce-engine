@@ -16,8 +16,11 @@ file "#{node[:ce_engine][:destination]}/config.json" do
   owner node[:ce_engine][:user]
   content <<-EOH
 {
-  "ce-operation-hub-subscriber": "#{node[:ce_engine][:ce_operation_hub_subscriber]}",
-  "ce-operation-hub-push": "#{node[:ce_engine][:ce_operation_hub_push]}"
+  "ce-operation-hub": {
+    "host": "#{node[:ce_engine][:ce_operation_hub][:host]}",
+    "stream": #{node[:ce_engine][:ce_operation_hub][:stream]},
+    "result": #{node[:ce_engine][:ce_operation_hub][:result]}
+  }
 }
   EOH
 end
