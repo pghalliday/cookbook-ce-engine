@@ -20,6 +20,10 @@ file "#{node[:ce_engine][:destination]}/config.json" do
     "host": "#{node[:ce_engine][:ce_operation_hub][:host]}",
     "stream": #{node[:ce_engine][:ce_operation_hub][:stream]},
     "result": #{node[:ce_engine][:ce_operation_hub][:result]}
+  },
+  "ce-delta-hub": {
+    "host": "#{node[:ce_engine][:ce_delta_hub][:host]}",
+    "stream": #{node[:ce_engine][:ce_delta_hub][:stream]}
   }
 }
   EOH

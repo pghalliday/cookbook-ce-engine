@@ -19,6 +19,8 @@ Attributes are specified under the `ce_engine` keyspace.
 - `node[:ce_engine][:ce_operation_hub][:host]` - the hostname of the ce-operation-hub instance (defaults to "localhost")
 - `node[:ce_engine][:ce_operation_hub][:stream]` - the port the ce-engine will use to subscribe to operations from the ce-operation-hub instance (defaults to "4001")
 - `node[:ce_engine][:ce_operation_hub][:result]` - the port the ce-engine will use to push operation results to the ce-operation-hub instance (defaults to "4002")
+- `node[:ce_engine][:ce_delta_hub][:host]` - the hostname of the ce-delta-hub instance (defaults to "localhost")
+- `node[:ce_engine][:ce_delta_hub][:stream]` - the port the ce-engine will use to stream deltas to the ce-delta-hub instance (defaults to "5002")
 
 ## Recipes
 
