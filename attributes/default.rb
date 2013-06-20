@@ -6,6 +6,7 @@ default[:ce_engine][:ce_operation_hub][:stream] = "4001"
 default[:ce_engine][:ce_operation_hub][:result] = "4002"
 default[:ce_engine][:ce_delta_hub][:host] = "localhost"
 default[:ce_engine][:ce_delta_hub][:stream] = "5002"
+default[:ce_engine][:ce_delta_hub][:state] = "5003"
 
 # dependency defaults
 default[:nodejs][:install_method] = "package"
