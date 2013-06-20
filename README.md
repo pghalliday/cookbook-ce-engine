@@ -32,5 +32,5 @@ Attributes are specified under the `ce_engine` keyspace.
 - Runs npm start to start the `ce-engine`
 
 ## License
-Copyright (c) 2013 Peter Halliday  
+Copyright &copy; 2013 Peter Halliday  
 Licensed under the MIT license.
