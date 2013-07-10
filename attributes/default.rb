@@ -1,6 +1,7 @@
 default[:ce_engine][:repository] = "https://github.com/pghalliday/ce-engine.git"
 default[:ce_engine][:destination] = "/opt/ce-engine"
 default[:ce_engine][:user] = "ce-engine"
+default[:ce_engine][:commission][:account] = "commission"
 default[:ce_engine][:ce_operation_hub][:host] = "localhost"
 default[:ce_engine][:ce_operation_hub][:stream] = "4001"
 default[:ce_engine][:ce_operation_hub][:result] = "4002"

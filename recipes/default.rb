@@ -16,6 +16,9 @@ file "#{node[:ce_engine][:destination]}/config.json" do
   owner node[:ce_engine][:user]
   content <<-EOH
 {
+  "commission": {
+    "account": "#{node[:ce_engine][:commission][:account]}"
+  },
   "ce-operation-hub": {
     "host": "#{node[:ce_engine][:ce_operation_hub][:host]}",
     "stream": #{node[:ce_engine][:ce_operation_hub][:stream]},
